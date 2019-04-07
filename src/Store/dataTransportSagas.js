@@ -2,12 +2,13 @@ import axios from 'axios';
 import * as actions from './action-types'
 import { put, call } from 'redux-saga/effects';
 
-export function* getMapsAsync( ) {
+export function* getMapsAsync( action ) {
 
    try{
+   const mel = action;
    const maps = yield axios.get('http://localhost:3060/map/list/44') ;
-   console.log( 'got the data' + maps)
-   put( { type: actions.GET_MAPS_RETURNED, maplist: maps});
+  
+   yield put( { type: actions.GET_MAPS_RETURNED, maplist: maps.data});
    }
    catch( error ) {
 
