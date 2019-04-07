@@ -6,7 +6,7 @@ export function* getMapsAsync( action ) {
 
    try{
    const mel = action;
-   const maps = yield axios.get('http://localhost:3060/map/list/44') ;
+   const maps = yield axios.get('http://localhost:3060/map/list/' + action.memberId) ;
   
    yield put( { type: actions.GET_MAPS_RETURNED, maplist: maps.data});
    }
