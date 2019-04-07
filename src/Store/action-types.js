@@ -1,0 +1,16 @@
+
+export const GET_MAPS_ASYNC ="GET_MAPS_ASYNC";
+
+export const GET_MAPS_RETURNED = "GET_MAPS_RETURNED";
+
+export const CREATE_MAP_ASYNC = "CREATE_MAP_ASYNC";
+
+export const CREATE_MAP_RETURNED = "CREATE_MAP_ASYNC";
+
+
+
+// export const DELETE_MAP = "DELETE_MAP";
+
+// export const AUTH_INITIATE_LOGOUT = "AUTH_INITIATE_LOGOUT"
+
+// export const AUTH_LOGOUT = "AUTH_LOGOUT";

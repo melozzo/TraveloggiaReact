@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 import Navigation from './../Nav/nav'
 import  Site  from './../Site/site';
 import { Photo } from './../Photo/photo';
-import { Map } from './../Map/map';
+import MapContainer from '../Map/map-container';
 
 export class Layout extends Component {
 
@@ -19,7 +19,7 @@ export class Layout extends Component {
                 <Container fluid="true">
                      <Route path="/Photo" component={Photo}></Route>
                      <Route path="/Site" component={Site}></Route>
-                     <Route path="/Map" component={Map}></Route>
+                     <Route path="/Map" component={MapContainer}></Route>
                 </Container>
         </Fragment> 
     )
