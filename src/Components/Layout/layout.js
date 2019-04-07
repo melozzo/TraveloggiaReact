@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import { Route } from 'react-router-dom';
-import { Site } from './../Site/site';
+import  Site  from './../Site/site';
 import { Photo } from './../Photo/photo';
 import { Map } from './../Map/map';
 
